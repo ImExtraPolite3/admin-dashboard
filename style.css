@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: max(20vw, 250px) 80vw;
+  grid-template-rows: max(20vh, 100px) 80vh;
+}
