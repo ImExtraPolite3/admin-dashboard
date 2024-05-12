@@ -28,6 +28,8 @@ body {
 .header-section {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  padding-top: 10px;
+  padding-left: 20px;
 }
 
 .main-content {
@@ -46,7 +48,8 @@ body {
   align-items: center;
 }
 
-.title-middle {
+.title-middle,
+.title-bottom {
   margin-top: 30px;
 }
 
@@ -60,7 +63,21 @@ body {
   padding: 0 5px ;
 }
 
-.title-bottom {
-  margin-top: 30px;
+.header-section-top {
+  display: grid;
+  grid-template-columns: 50px 900px 30px 50px 150px;
 }
 
+.header-section-top > div {
+  display: flex;
+  align-items: center;
+}
+
+.header-section-top > div:nth-child(2) > input {
+  background-color: #E5E7EB;
+  border: none;
+  width: 90%;
+  height: 25px;
+  border-radius: 20px;
+  padding: 0 10px;
+}
