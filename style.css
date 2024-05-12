@@ -67,7 +67,7 @@ body {
 
 .header-section-top {
   display: grid;
-  grid-template-columns: 50px 900px 30px 50px 120px;
+  grid-template-columns: 50px 78% 30px 50px 120px;
 }
 
 .header-section-top > div {
