@@ -81,3 +81,36 @@ body {
   border-radius: 20px;
   padding: 0 10px;
 }
+
+.header-section-top > div:nth-child(4) > img {
+  border-radius: 20px;
+}
+
+.header-section-top {
+  margin-bottom: 15px;
+}
+
+.header-section-bottom > div:first-child > img {
+  border-radius: 70px;
+}
+
+.header-section-bottom {
+  display: flex;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+}
+
+.header-section-bottom > div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-section-bottom > div:last-child > button {
+  margin: 0 20px;
+  border: none;
+  background-color: #1481eb;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+}
