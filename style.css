@@ -183,3 +183,21 @@ body {
   width: 85%;
   margin: auto;
 }
+
+.trending > div {
+  margin-right: 10px;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.trending > div > div {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  gap: 5px;
+}
+
+.trending > div > div > div > img {
+  border-radius: 20px;
+}
