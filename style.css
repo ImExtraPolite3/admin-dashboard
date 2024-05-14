@@ -40,6 +40,7 @@ body {
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-rows: repeat(2, 1fr);
+  background-color: #b7c4c9;
 }
 
 .title {
@@ -124,12 +125,61 @@ body {
   grid-row: 1 / 3;
 }
 
-.projects > h3 {
+.projects > h3, 
+.announcements > h4,
+.announcements > div,
+.trending > h4 {
   margin-bottom: 10px;
 }
 
-
 .projects > div {
   display: grid;
+  gap: 20px;
   grid-template-columns: repeat(2, 1fr);
+  margin-right: 20px;
+}
+
+.projects > div > div {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+}
+
+.projects > div > div > p{
+  font-size: 0.8rem;
+}
+
+.projects > div > div > div:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 10px;
+  background-color: #f0a439;
+}
+
+.projects > div > div > div:last-child {
+  padding-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-right: 10px;
+}
+
+.announcements > div > div {
+  padding: 15px;
+}
+
+.announcements > div {
+  margin-right: 10px;
+  background-color: white;
+}
+
+.announcements > div > div > p {
+  font-size: 0.6rem;
+}
+
+.announcements > div > hr {
+  width: 85%;
+  margin: auto;
 }
