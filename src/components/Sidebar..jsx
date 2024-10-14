@@ -3,30 +3,34 @@ const linkNames = [
   ['Settings', 'Support', 'Privacy'],
 ];
 
-function Links(images, names) {
+function Links({ images, names }) {
   return (
-    <div>
-      {/* <img src={images} alt="" /> */}
+    <>
+      <img src={images} alt="" />
       <p>{names}</p>
-    </div>
+    </>
   );
 }
 
-function First() {
-  console.log(linkNames[0]);
-
-  // return linkNames[0].map((eachRow) => {
-  //   <Links names={eachRow} />;
-  // });
+function GetLinks() {
+  return linkNames.map((eachRow, rowIndex) => {
+    return (
+      <div key={rowIndex}>
+        {eachRow.map((eachWord, wordIndex) => {
+          return <Links key={wordIndex} images="" names={eachWord} />;
+        })}
+      </div>
+    );
+  });
 }
 
 export default function Sidebar() {
-  First();
-
   return (
     <div>
       <h1>Dashboard</h1>
-      <First />
+      <div>
+        <GetLinks />
+      </div>
     </div>
   );
 }
