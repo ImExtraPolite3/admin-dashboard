@@ -5,10 +5,10 @@ const linkNames = [
 
 function Links({ images, names }) {
   return (
-    <>
+    <div>
       <img src={images} alt="" />
       <p>{names}</p>
-    </>
+    </div>
   );
 }
 
