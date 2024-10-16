@@ -15,6 +15,8 @@ const imgLinks = [
   ['cog.svg', 'help-box.svg', 'shield-check.svg'],
 ];
 
+const linkContainerId = ['link-row-one', 'link-row-tow'];
+
 function Links({ images, names }) {
   return (
     <div>
@@ -27,7 +29,7 @@ function Links({ images, names }) {
 function GetLinks() {
   return linkNames.map((eachRow, rowIndex) => {
     return (
-      <div key={rowIndex}>
+      <div id={linkContainerId[rowIndex]} key={rowIndex}>
         {eachRow.map((eachWord, wordIndex) => {
           return (
             <Links
@@ -44,11 +46,9 @@ function GetLinks() {
 
 export default function Sidebar() {
   return (
-    <div>
+    <nav>
       <h1>Dashboard</h1>
-      <div>
-        <GetLinks />
-      </div>
-    </div>
+      <GetLinks />
+    </nav>
   );
 }
