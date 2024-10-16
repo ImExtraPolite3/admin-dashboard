@@ -29,7 +29,7 @@ function Links({ images, names }) {
 function GetLinks() {
   return linkNames.map((eachRow, rowIndex) => {
     return (
-      <div id={linkContainerId[rowIndex]} key={rowIndex}>
+      <div id={linkContainerId[rowIndex]} className="links" key={rowIndex}>
         {eachRow.map((eachWord, wordIndex) => {
           return (
             <Links
