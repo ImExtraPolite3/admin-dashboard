@@ -3,6 +3,18 @@ const linkNames = [
   ['Settings', 'Support', 'Privacy'],
 ];
 
+const imgLinks = [
+  [
+    'home.svg',
+    'card-account-details-outline.svg',
+    'message-reply.svg',
+    'clock-time-three.svg',
+    'note-multiple.svg',
+    'account-group.svg',
+  ],
+  ['cog.svg', 'help-box.svg', 'shield-check.svg'],
+];
+
 function Links({ images, names }) {
   return (
     <div>
@@ -17,7 +29,13 @@ function GetLinks() {
     return (
       <div key={rowIndex}>
         {eachRow.map((eachWord, wordIndex) => {
-          return <Links key={wordIndex} images="" names={eachWord} />;
+          return (
+            <Links
+              key={wordIndex}
+              images={imgLinks[rowIndex][wordIndex]}
+              names={eachWord}
+            />
+          );
         })}
       </div>
     );
