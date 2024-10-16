@@ -1,3 +1,13 @@
-nav div {
-  border: solid;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #1481eb;
+  color: white;
+}
+
+.links > div > img {
+  width: 20px;
 }
