@@ -48,7 +48,9 @@ export default function Sidebar() {
   return (
     <nav>
       <h1>Dashboard</h1>
-      <GetLinks />
+      <div className="all-links hide">
+        <GetLinks />
+      </div>
     </nav>
   );
 }
