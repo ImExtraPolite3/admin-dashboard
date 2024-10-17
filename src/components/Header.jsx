@@ -8,7 +8,7 @@ function DisplayButtons() {
 
 export default function Header() {
   return (
-    <header className="header">
+    <header className="headers">
       <div>
         <img src="magnify.svg" alt="" width="20px" />
         <input type="text" />
