@@ -46,7 +46,7 @@ function GetLinks() {
 
 export default function Sidebar() {
   return (
-    <nav>
+    <nav className="nav-bar">
       <h1>Dashboard</h1>
       <div className="all-links hide">
         <GetLinks />

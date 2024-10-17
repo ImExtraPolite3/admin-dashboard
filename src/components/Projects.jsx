@@ -18,7 +18,7 @@ function Project() {
 
 export default function Projects() {
   return (
-    <section>
+    <section className="projects">
       <h2>Your Projects</h2>
       <>
         {Array(6)

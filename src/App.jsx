@@ -1,6 +1,7 @@
 import Sidebar from './components/Sidebar.';
 import Header from './components/Header';
 import Projects from './components/Projects';
+import Announcements from './components/Announcements';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Sidebar />
       <Header />
       <Projects />
+      <Announcements />
     </>
   );
 }
