@@ -51,6 +51,9 @@ export default function Sidebar() {
       <div className="all-links hide">
         <GetLinks />
       </div>
+      <div className="menu">
+        <img src="menu.svg" alt="" width="30px" />
+      </div>
     </nav>
   );
 }
