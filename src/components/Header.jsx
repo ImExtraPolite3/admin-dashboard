@@ -13,6 +13,8 @@ export default function Header() {
         <img src="magnify.svg" alt="" width="20px" />
         <input type="text" />
         <img src="bell-ring-outline.svg" alt="" width="20px" />
+        <img src="emoticon-poop.svg" alt="" width="30px" />
+        <h3 className="hide">Random Person</h3>
       </div>
       <div>
         <img src="emoticon-poop.svg" alt="" width="40px" />
