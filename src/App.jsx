@@ -9,9 +9,11 @@ function App() {
     <>
       <Sidebar />
       <Header />
-      <Projects />
-      <Announcements />
-      <Trending />
+      <div className="gray-background">
+        <Projects />
+        <Announcements />
+        <Trending />
+      </div>
     </>
   );
 }
