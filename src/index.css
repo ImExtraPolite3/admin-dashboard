@@ -44,6 +44,36 @@ nav {
   width: 25px;
 }
 
+.headers > div:last-child {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.headers > div:last-child > img {
+  justify-self: center;
+  align-self: center;
+}
+
+.headers > div:last-child > div > h1 {
+  /* font-size: rem; */
+}
+
+.headers > div:last-child > div:last-child {
+  margin-top: 10px;
+  grid-column: 1 / 3;
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.headers > div:last-child > div:last-child > button {
+  background-color: #1481eb;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
 .links > div > img {
   width: 20px;
 }

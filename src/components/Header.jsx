@@ -15,7 +15,7 @@ export default function Header() {
         <img src="arrow-right.svg" alt="" />
       </div>
       <div>
-        <img src="emoticon-poop.svg" alt="" width="40px" />
+        <img src="emoticon-poop.svg" alt="" width="80%" />
         <div>
           <p>Hi there,</p>
           <h1>Random Person (@SomeRandomPerson)</h1>
