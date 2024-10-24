@@ -74,6 +74,25 @@ nav {
   border-radius: 5px;
 }
 
+.gray-background {
+  background-color: #b7c4c9;
+}
+
+.projects {
+  margin-top: 10px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects > div {
+  background-color: white;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+}
+
 .links > div > img {
   width: 20px;
 }
