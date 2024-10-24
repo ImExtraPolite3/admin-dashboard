@@ -12,7 +12,7 @@ export default function Header() {
       <div>
         <img src="magnify.svg" alt="" width="20px" />
         <input type="text" />
-        <img src="bell-ring-outline.svg" alt="" width="20px" />
+        <img src="arrow-right.svg" alt="" width="20px" />
       </div>
       <div>
         <img src="emoticon-poop.svg" alt="" width="40px" />
