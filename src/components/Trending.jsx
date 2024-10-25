@@ -15,7 +15,7 @@ function DisplayTrending() {
 export default function Trending() {
   return (
     <section className="trending">
-      <h4>Trending</h4>
+      <h3>Trending</h3>
       <div>
         {Array(3)
           .fill(true)
