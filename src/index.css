@@ -93,6 +93,49 @@ nav {
   border-left: solid#f0a439 10px;
 }
 
+.others {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+}
+
+.others > section > div {
+  background-color: white;
+  padding: 15px;
+  margin-top: 5px;
+}
+
+.others > section:last-child > div > div > div {
+  display: flex;
+}
+
+.others > section:last-child > div,
+.others > section:first-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.others > section:last-child > div > hr,
+.others > section:first-child > div > hr {
+  width: 85%;
+  margin: auto;
+  border: none;
+  height: 4px;
+  background-color: lightgray;
+}
+
+.others > section:last-child > div > hr {
+  width: 70%;
+}
+
+.others > section:last-child > div > div > div > div > p,
+.others > section:first-child > div > div > p {
+  font-size: 0.9rem;
+}
+
 .links > div > img {
   width: 20px;
 }
