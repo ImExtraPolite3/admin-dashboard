@@ -11,8 +11,10 @@ function App() {
       <Header />
       <div className="gray-background">
         <Projects />
-        <Announcements />
-        <Trending />
+        <div className="others">
+          <Announcements />
+          <Trending />
+        </div>
       </div>
     </>
   );
