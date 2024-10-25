@@ -78,6 +78,8 @@ nav {
 }
 
 .projects {
+  width: 95%;
+  margin: auto;
   margin-top: 10px;
   padding-top: 15px;
   display: flex;
