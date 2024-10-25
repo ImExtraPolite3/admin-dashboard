@@ -15,7 +15,7 @@ export default function Announcements() {
   return (
     <section className="announcements">
       <h3>Announcements</h3>
-      <>
+      <div>
         {Array(2)
           .fill(true)
           .map((_, i) => (
@@ -25,7 +25,7 @@ export default function Announcements() {
             </>
           ))}
         <DisplayAnnouncements key={'3'} />
-      </>
+      </div>
     </section>
   );
 }
