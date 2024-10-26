@@ -107,8 +107,7 @@ nav {
 }
 
 .others {
-  display: grid;
-  grid-template-columns: 60% 30%;
+  display: flex;
   justify-content: center;
   gap: 15px;
   padding: 15px;
@@ -155,4 +154,15 @@ nav {
 
 .hide {
   display: none;
+}
+
+@media (max-width: 400px) {
+  .headers > div:last-child > div > h1 {
+    font-size: 1.3rem;
+  }
+
+  .others {
+    display: flex;
+    flex-direction: column;
+  }
 }
