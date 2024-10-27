@@ -23,7 +23,7 @@ export default function Header() {
         <div className="plus">
           <button>+</button>
         </div>
-        <div className="hide">
+        <div className="post-buttons hide">
           <DisplayButtons />
         </div>
       </div>
