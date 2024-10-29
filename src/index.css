@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'roboto';
-  src: url(Roboto-Regular.ttf);
+  src: url(/Roboto-Regular.ttf);
 }
 
 * {
@@ -186,6 +186,32 @@ nav {
     justify-content: start;
   }
 
+  .post-buttons {
+    display: block;
+  }
+
+  .headers > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .headers > div:last-child > div:last-child {
+    display: flex;
+    gap: 20px;
+  }
+
+  .headers > div:last-child > div {
+    align-self: center;
+  }
+
+  .headers > div:last-child > div:last-child > button {
+    background-color: #1481eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
   .projects > div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,6 +238,10 @@ nav {
 
   .header-text {
     flex-grow: 2;
+  }
+
+  .plus {
+    display: none;
   }
 }
 
@@ -257,35 +287,12 @@ nav {
     gap: 5px;
   }
 
-  .all-links,
-  .post-buttons {
+  .all-links {
     display: block;
-  }
-
-  .headers > div:last-child {
-    display: flex;
-    justify-content: center;
-  }
-
-  .headers > div:last-child > div {
-    align-self: center;
   }
 
   .headers > div:last-child > div:first-child {
     border: solid;
-  }
-
-  .headers > div:last-child > div:last-child {
-    display: flex;
-    gap: 20px;
-  }
-
-  .headers > div:last-child > div:last-child > button {
-    background-color: #1481eb;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
   }
 
   .headers > div:last-child > img {
@@ -299,10 +306,6 @@ nav {
 
   .others > section:first-child > div > div > p {
     font-size: 0.63rem;
-  }
-
-  .plus {
-    display: none;
   }
 }
 
