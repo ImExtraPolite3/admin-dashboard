@@ -300,6 +300,10 @@ nav {
   .others > section:first-child > div > div > p {
     font-size: 0.63rem;
   }
+
+  .plus {
+    display: none;
+  }
 }
 
 @media (min-width: 1430px) {
