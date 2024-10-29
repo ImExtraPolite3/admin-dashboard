@@ -46,7 +46,7 @@ nav {
 
 .headers > div:last-child {
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20vw 80vw;
 }
 
 .headers > div:last-child > img {
@@ -88,6 +88,12 @@ nav {
 }
 
 .projects > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projects > div > div {
   background-color: white;
   padding: 10px;
   width: 90%;
@@ -98,7 +104,7 @@ nav {
   gap: 5px;
 }
 
-.projects > div > div {
+.projects > div > div > div {
   display: flex;
   gap: 10px;
   align-self: flex-end;
@@ -121,6 +127,7 @@ nav {
 
 .others > section:last-child > div > div > div {
   display: flex;
+  gap: 5px;
 }
 
 .others > section:last-child > div,
@@ -128,6 +135,15 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.others > section:last-child > div {
+  align-items: center;
+}
+
+.others > section:last-child > div > div {
+  /* display: flex;
+  gap: 10px; */
 }
 
 .others > section:last-child > div > hr,
@@ -171,7 +187,7 @@ nav {
 @media (min-width: 1200px) {
   #root {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 15vw 85vw;
     grid-template-rows: 20vh 80vh;
   }
 
@@ -212,8 +228,11 @@ nav {
   }
 
   .headers > div:last-child > div {
-    /* border: solid; */
     align-self: center;
+  }
+
+  .headers > div:last-child > div:first-child {
+    border: solid;
   }
 
   .headers > div:last-child > div:last-child {
@@ -231,5 +250,43 @@ nav {
 
   .headers > div:last-child > img {
     width: 85px;
+  }
+
+  .gray-background {
+    display: grid;
+    grid-template-columns: 65vw 20vw;
+  }
+
+  .projects {
+    justify-content: start;
+  }
+
+  .projects > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects > div > div > p {
+    font-size: 0.8rem;
+  }
+
+  .others {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .announcements > h3,
+  .trending > h3 {
+    font-size: 1rem;
+  }
+
+  .others > section:first-child > div > div > p {
+    font-size: 0.63rem;
+  }
+
+  .others > section:last-child > div > div > div > div > h4,
+  .others > section:first-child > div > div > h4 {
+    font-size: 0.8rem;
   }
 }
