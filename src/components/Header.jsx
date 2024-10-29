@@ -16,7 +16,7 @@ export default function Header() {
       </div>
       <div>
         <img src="emoticon-poop.svg" alt="" width="65%" />
-        <div>
+        <div className="header-text">
           <p>Hi there,</p>
           <h1>Random Person (@SomeRandomPerson)</h1>
         </div>
