@@ -20,13 +20,13 @@ export default function Projects() {
   return (
     <section className="projects">
       <h2>Your Projects</h2>
-      <>
+      <div>
         {Array(6)
           .fill(true)
           .map((_, i) => (
             <Project key={i} />
           ))}
-      </>
+      </div>
     </section>
   );
 }
