@@ -205,4 +205,31 @@ nav {
   .post-buttons {
     display: block;
   }
+
+  .headers > div:last-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  .headers > div:last-child > div {
+    /* border: solid; */
+    align-self: center;
+  }
+
+  .headers > div:last-child > div:last-child {
+    display: flex;
+    gap: 20px;
+  }
+
+  .headers > div:last-child > div:last-child > button {
+    background-color: #1481eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .headers > div:last-child > img {
+    width: 85px;
+  }
 }
